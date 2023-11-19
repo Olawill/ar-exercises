@@ -14,7 +14,7 @@ puts "----------"
 @store1.employees.create(first_name: "Deotany", last_name: "Wilder", hourly_rate: 50)
 @store1.employees.create(first_name: "Tyson", last_name: "Fury", hourly_rate: 40)
 @store1.employees.create(first_name: "Anthony", last_name: "Joshua", hourly_rate: 66)
-@store1.employees.create(first_name: "Daniel", last_name: "Fogler", hourly_rate: 35)
+@store1.employees.create(first_name: "Daniel", last_name: "Fogler", hourly_rate: 45)
 
 # STORE 2
 @store2.employees.create(first_name: "Israel", last_name: "Adesanya", hourly_rate: 60)
@@ -22,6 +22,6 @@ puts "----------"
 @store2.employees.create(first_name: "Lateef", last_name: "Adedimeji", hourly_rate: 50)
 @store2.employees.create(first_name: "Akeem", last_name: "Smith", hourly_rate: 40)
 @store2.employees.create(first_name: "Siju", last_name: "Sobo", hourly_rate: 66)
-@store2.employees.create(first_name: "Bondo", last_name: "Guy", hourly_rate: 35)
+@store2.employees.create(first_name: "Bondo", last_name: "Guy", hourly_rate: 150)
 
 puts Employee.count
