@@ -7,7 +7,7 @@ class Store < ActiveRecord::Base
   validate :mens_apparel_womens_apparel_not_empty, on: [:create, :update]
 
   def mens_apparel_womens_apparel_not_empty
-    if mens_apparel == false && womens_apparel == false
+    if mens_apparel.nil? || womens_apparel.nil? || (mens_apparel == false && womens_apparel == false)
       errors.add(:base, "Store must carry at least one category")
     end
   end
